@@ -12,6 +12,8 @@ struct ContentView: View {
     
   @ObservedObject var orderListVM: OrderListViewModel
     
+    @State private var isPresented: Bool = false
+    
     init() {
        
         self.orderListVM = OrderListViewModel()
@@ -36,8 +38,15 @@ struct ContentView: View {
                 }
             }
             }
+        .sheet(isPresented: $isPresented, onDismiss: {
+            self.orderListVM.fetchAllOrders()
+        }, content: {
+            AddOrderView(isPresented: $isPresented)
+        })
         .navigationTitle("Orders")
-        .navigationBarItems(trailing: Button("Add New Order"){})
+        .navigationBarItems(trailing: Button("Add New Order"){
+            self.isPresented = true
+        })
         }
     }
 }
