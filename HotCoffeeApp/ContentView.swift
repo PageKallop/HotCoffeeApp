@@ -18,7 +18,12 @@ struct ContentView: View {
        
         self.orderListVM = OrderListViewModel()
     }
-    
+    private func delete(at offsets: IndexSet) {
+        offsets.forEach { index in
+            let orderVM = self.orderListVM.orders[index]
+            self.orderListVM.deleteOrder(orderVM)
+        }
+    }
     var body: some View {
         
         NavigationView {
@@ -36,7 +41,7 @@ struct ContentView: View {
                         .font(.largeTitle)
                         .padding([.leading], 10)
                 }
-            }
+            }.onDelete(perform: delete)
             }
         .sheet(isPresented: $isPresented, onDismiss: {
             self.orderListVM.fetchAllOrders()
