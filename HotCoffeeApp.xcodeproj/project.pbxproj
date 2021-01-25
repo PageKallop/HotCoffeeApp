@@ -18,6 +18,7 @@
 		C0D9275325BCD607000B70B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0D9275225BCD607000B70B4 /* Preview Assets.xcassets */; };
 		C0D9275625BCD607000B70B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0D9275425BCD607000B70B4 /* LaunchScreen.storyboard */; };
 		C0D9275F25BCD7C4000B70B4 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D9275E25BCD7C4000B70B4 /* CoreDataManager.swift */; };
+		C0E3247025BF27B900335D9F /* OrderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E3246F25BF27B900335D9F /* OrderListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		C0D9275525BCD607000B70B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0D9275725BCD607000B70B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0D9275E25BCD7C4000B70B4 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		C0E3246F25BF27B900335D9F /* OrderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				C086F8DF25BE439800465A40 /* AddOrderViewModel.swift */,
+				C0E3246F25BF27B900335D9F /* OrderListViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				C0D9274725BCD605000B70B4 /* AppDelegate.swift in Sources */,
 				C0D9274E25BCD605000B70B4 /* HotCoffeeApp.xcdatamodeld in Sources */,
 				C086F8DB25BE362D00465A40 /* NSManagedObjectContext+Ext.swift in Sources */,
+				C0E3247025BF27B900335D9F /* OrderListViewModel.swift in Sources */,
 				C0D9274925BCD605000B70B4 /* SceneDelegate.swift in Sources */,
 				C0D9275F25BCD7C4000B70B4 /* CoreDataManager.swift in Sources */,
 				C086F8E325BE45AE00465A40 /* AddOrderView.swift in Sources */,

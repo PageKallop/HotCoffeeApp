@@ -6,11 +6,39 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct ContentView: View {
+    
+  @ObservedObject var orderListVM: OrderListViewModel
+    
+    init() {
+       
+        self.orderListVM = OrderListViewModel()
+    }
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        NavigationView {
+        List {
+            
+            ForEach(self.orderListVM.orders, id: \.self.name) { order in
+                
+                HStack {
+                    
+                    Image(order.type)
+                        .resizable()
+                        .frame(width: 100, height: 100)
+                        .cornerRadius(10)
+                    Text(order.name)
+                        .font(.largeTitle)
+                        .padding([.leading], 10)
+                }
+            }
+            }
+        .navigationTitle("Orders")
+        .navigationBarItems(trailing: Button("Add New Order"){})
+        }
     }
 }
 
