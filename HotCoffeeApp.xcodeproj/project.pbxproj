@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C086F8DB25BE362D00465A40 /* NSManagedObjectContext+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C086F8DA25BE362D00465A40 /* NSManagedObjectContext+Ext.swift */; };
+		C086F8E025BE439800465A40 /* AddOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C086F8DF25BE439800465A40 /* AddOrderViewModel.swift */; };
+		C086F8E325BE45AE00465A40 /* AddOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C086F8E225BE45AE00465A40 /* AddOrderView.swift */; };
 		C0D9274725BCD605000B70B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D9274625BCD605000B70B4 /* AppDelegate.swift */; };
 		C0D9274925BCD605000B70B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D9274825BCD605000B70B4 /* SceneDelegate.swift */; };
 		C0D9274B25BCD605000B70B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D9274A25BCD605000B70B4 /* ContentView.swift */; };
@@ -20,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		C086F8DA25BE362D00465A40 /* NSManagedObjectContext+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Ext.swift"; sourceTree = "<group>"; };
+		C086F8DF25BE439800465A40 /* AddOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViewModel.swift; sourceTree = "<group>"; };
+		C086F8E225BE45AE00465A40 /* AddOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderView.swift; sourceTree = "<group>"; };
 		C0D9274325BCD605000B70B4 /* HotCoffeeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotCoffeeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0D9274625BCD605000B70B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0D9274825BCD605000B70B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +55,22 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		C086F8E525BE466A00465A40 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C086F8E225BE45AE00465A40 /* AddOrderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C086F8E725BE468100465A40 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				C086F8DF25BE439800465A40 /* AddOrderViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
 		C0D9273A25BCD605000B70B4 = {
 			isa = PBXGroup;
 			children = (
@@ -70,10 +90,12 @@
 		C0D9274525BCD605000B70B4 /* HotCoffeeApp */ = {
 			isa = PBXGroup;
 			children = (
+				C0D9274A25BCD605000B70B4 /* ContentView.swift */,
 				C0D9274625BCD605000B70B4 /* AppDelegate.swift */,
 				C0D9274825BCD605000B70B4 /* SceneDelegate.swift */,
 				C0D9276125BCD7CE000B70B4 /* Manager */,
-				C0D9274A25BCD605000B70B4 /* ContentView.swift */,
+				C086F8E525BE466A00465A40 /* View */,
+				C086F8E725BE468100465A40 /* View Models */,
 				C086F8DD25BE363600465A40 /* Extensions */,
 				C0D9274F25BCD607000B70B4 /* Assets.xcassets */,
 				C0D9275425BCD607000B70B4 /* LaunchScreen.storyboard */,
@@ -175,6 +197,8 @@
 				C086F8DB25BE362D00465A40 /* NSManagedObjectContext+Ext.swift in Sources */,
 				C0D9274925BCD605000B70B4 /* SceneDelegate.swift in Sources */,
 				C0D9275F25BCD7C4000B70B4 /* CoreDataManager.swift in Sources */,
+				C086F8E325BE45AE00465A40 /* AddOrderView.swift in Sources */,
+				C086F8E025BE439800465A40 /* AddOrderViewModel.swift in Sources */,
 				C0D9274B25BCD605000B70B4 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
